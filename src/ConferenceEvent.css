@@ -258,28 +258,43 @@
     width: 100vw;
   }
   
-  .company_logo {
+  /* .company_logo {
     font-size: 30px;
     color: #EFC16B;
     font-weight: 700;
-  }
+  } */
+  .company_logo {
+  font-size: 20px;
+  font-weight: bold;
+}
   .nav_links{
     display: flex;
     gap: 170px;
   }
-  .left_navbar{
+  /* .left_navbar{
     width: 60vw;
     display: flex;
     gap: 180px;
   
-  }
-  .nav_links a {
+  } */
+  .left_navbar {
+  display: flex;
+  align-items: center; /* Vertically align items */
+  gap: 20px; /* Reduced gap between links and button */
+}
+  /* .nav_links a {
     text-decoration: none;
     color: white;
     margin-right: 20px;
     transition: all 0.3s ease;
     font-size: 25px;
-  }
+  } */
+  .nav_links a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+  font-size: 20px; /* Slightly smaller font size */
+}
   
   .nav_links a:hover {
     color: #ff9900;
@@ -303,11 +318,20 @@
   }
   
   
-  .navbar_event_conference{
+  /* .navbar_event_conference{
     position: fixed;
     top: 1px;
     z-index: 99;
-  }
+  } */
+  .navbar_event_conference {
+  display: flex;
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: center; /* Vertically align items */
+  padding: 10px 20px; /* Add some padding for spacing */
+  background-color: #333; /* Example background color */
+  color: white;
+}
+
   .btn-disabled {
     opacity: 0.5; /* Reduce opacity to visually indicate disabled state */
     cursor: not-allowed; /* Change cursor to indicate that the button is not clickable */
